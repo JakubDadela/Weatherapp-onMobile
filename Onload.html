@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="description" content="Tu wpisz opis zawartości strony">
+    <!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <!--jakies fonty googlowskie-->  
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="pogoda weather rainy">
+        <meta name="description" content="weather-app">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="style3.css">
+        <title>Check the weather</title>
+    </head>
+    <body onload="odliczanie();">
+        <div id="loading_screen">
+            <div id="onload">
+                <img src="chmura.png" width="100%" height="100%">
+            </div>
+            <div class="pasek">
+                <div class="kwadrat"></div>
+            </div>
+        </div>
+        <div id="glowna">
+            <img src="chmura.png" class="zdj2" alt="image">
+            <div id="button-holder">
+                <form>
+                    <div class="input-holder">
+                    <input type="text" id="miasto" list="datalist" placeholder="Wybierz miasto">
+                    <img src="strzalka.png" id="pk">
+                    </div>
+                    <ul class="card card-body mb-2 complete" id="completion" hidden=true>
+                    </ul>  
+                
+
+                </form>
+            </div>
+        </div>
+        <div id="pogoda">
+            <img src="belmondziak.png" class="chmura">
+            <div class="zmien">
+                    <p>Zmien miasto!</p>
+                </div>
+                <div class='Data'>
+                </div>
+                    <h1 class="prowincja"></h1>
+                    <p class="temp">Temperatura wynosi :</p>
+                    <p class="tempmax ">Temperatura wynosi max :</p>
+                    <p class="tempmin">Temperatura wynosi min :</p>
+                    <p class="cisnienie">Ciśnienienie wynosi :</p>
+                    <p class="wiatr">Prędkość wiatru wynosi :</p>
+                    <!-- <p class="Opady">Opady wiatru wynosi :</p> -->
+                    
+                
+        </div>
+        <script src="main1.js"></script>
+    </body>
+</html>
